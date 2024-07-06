@@ -1,0 +1,113 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.light-mode {
+  background-color: #f0f0f5;
+  color: #000;
+}
+
+.light-mode .stopwatch {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.dark-mode .stopwatch {
+  background-color: #444;
+  border: 2px solid #fff;
+  color: black;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url("./assets/stopwatch1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 48px;
+  margin: 20px;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.start {
+  background-color: #28a745;
+}
+
+.start:hover {
+  background-color: #218838;
+}
+
+.stop {
+  background-color: #dc3545;
+}
+
+.stop:hover {
+  background-color: #c82333;
+}
+
+.reset {
+  background-color: #ffc107;
+}
+
+.reset:hover {
+  background-color: #e0a800;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+
+  color: inherit;
+}
+
+.theme-toggle:hover {
+  color: #007bff;
+}
