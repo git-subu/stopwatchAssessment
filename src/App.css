@@ -104,10 +104,39 @@ button {
   border: none;
   cursor: pointer;
   font-size: 24px;
-
+  border: 2px solid black;
   color: inherit;
 }
 
 .theme-toggle:hover {
   color: #007bff;
+}
+@media (max-width: 768px) {
+  .timer {
+    font-size: 36px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .theme-toggle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .theme-toggle {
+    font-size: 16px;
+  }
 }
